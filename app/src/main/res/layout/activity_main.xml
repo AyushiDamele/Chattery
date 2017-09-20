@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kumar.chatapp.MainActivity"
+    android:id="@+id/main_layout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:id="@+id/tvNumber"
+                android:ems="10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:inputType="phone"
+                android:hint="Enter_contact_number"
+                android:background="#3ef982"/>
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/contactsbutton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:id="@+id/contactsbutton" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/pushingUp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textMsg"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="78dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="Enter Message"
+                android:id="@+id/tvMessage"
+                android:background="#f45239" />
+
+
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="78dp"
+                android:background="@drawable/send_button"
+                android:id="@+id/btnSend"
+                android:height="2dp"
+                android:importantForAccessibility="noHideDescendants"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

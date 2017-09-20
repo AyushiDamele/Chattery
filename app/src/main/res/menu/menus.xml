@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="options_menu">
+
+        <item
+            android:title="Change background to black"
+            android:id="@+id/black" />
+        <item
+            android:title="Change font size"
+            android:id="@+id/font_size"/>
+        <item
+                android:title="Change background to white "
+                android:id="@+id/white"/>
+
+        <item
+            android:title="Change to default font size"
+            android:id="@+id/default_font"/>
+
+        <item
+            android:id="@+id/inbox"
+            android:title="Inbox"
+            android:showAsAction="always"/>
+
+
+</menu>
+
